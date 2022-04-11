@@ -1,0 +1,13 @@
+# 文件
+config.py
+
+# 文件后缀
+*.log
+
+# 特定文件夹
+**/__pycache__
+**/.DS_Store
+
+
+
+
