@@ -3,6 +3,7 @@ from flaskz import log
 from config import config
 from .main import main_bp
 from .hass import hass_bp
+from .api import api_bp
 
 
 def create_app(config_name):
@@ -18,5 +19,6 @@ def create_app(config_name):
 
     app.register_blueprint(main_bp, url_prefix='/')
     app.register_blueprint(hass_bp, url_prefix='/hass')
+    app.register_blueprint(api_bp, url_prefix='/api')
 
     return app
